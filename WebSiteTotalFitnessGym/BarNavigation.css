@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul
+   {
+   list-style-type:none;
+   margin:2;
+   padding:3;
+   overflow:hidden;
+   }
+   li
+   {
+      float:left;
+   }
+   a:link,a:visited
+   {
+   display:block;
+   width:180 px;
+   color:#FFFFFF;
+   background-color:#000000;
+   text-align:center;
+   padding:4px;
+   text-decoration:none;
+   font-family:Arial, Helvetica, sans-serif;
+  
+   }
+   a:hover,a:active
+   {
+   background-color:rgb(44,108,27);
+   color:rgb(49,213,3);
+   }

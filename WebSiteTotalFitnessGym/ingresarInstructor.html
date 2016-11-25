@@ -1,0 +1,102 @@
+<!doctype HTML>
+<html>
+
+<head>
+
+    <title>Instructor</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="ValidarRegInst.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+
+        <link href="BarNavigation.css" rel="stylesheet" type="text/css">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body background="fondo1/fondo.jpg">
+    <div class="container">
+        <header class="row">
+            <div class="col-md-6">
+                <img src="images/7.jpg" class="img-rounded" alt="" width="225" helght="100">
+            </div>
+            <div class="col-md-6 text-right">
+                <p ><img src="images/2.jpg" class="img-rounded" alt="" width="500" helght="150"></p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <a href="index.html" id="lnk-index">INICIO</a>
+                    <a href="control.html" id="lnk-control">CONTROL</a>
+                    <a href="inscripcion.html" id="lnk-inscripcion">INSCRIPCION</a>
+                    <a href="ingresar.html" id="lnk-ingresar">INGRESAR</a>
+                    <a href="modificar.html" id="lnk-modificar">MODIFICAR</a>
+                    <a href="registro.html" id="lnk-registro">REGISTRO</a>
+                </div>
+
+     
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </header>
+        
+        <div class="row">
+                <div class="col-md-12 text-left">
+                    <a href="ingresarSocio.html" id="lnk-socio">Socio</a>
+                    <a href="ingresarInstructor.html" id="lnk-instructor">Instructor</a>
+                    <a href="ingresarHorario.html" id="lnk-horario">Horario</a>
+                    <a href="ingresarRutina.html" id="lnk-rutina">Rutina</a>
+                    <a href="ingresarPago.html" id="lnk-pago">Pago</a>
+                </div>
+    </div>
+    <center>
+    <form action="ingresarInstructor.php" method="post" onsubmit="return ValidarRegInstructor(this)">
+        <br/><table border=1 align="center" bgcolor="#B40404">
+      <tr align="center"><td><header class="row">
+
+                <div class="col-md-12">
+                   <br/><h4 Style="color:black">Nombre:</h4><input type="text" placeholder="Ejemplo: Martin Lutero" maxlength="" id="nombreI" name="nombreI" onkeypress="return soloLetras(event)">
+                </div>
+                
+            </div>
+             
+
+                <div class="col-md-12">
+                   <h4 Style="color:black">Direccion:</h4><input type="text" placeholder="Ejemplo: Tula de Allende" maxlength="" id="direccion" name="direccion" onkeypress="return soloLetras(event)">
+                </div>
+                
+            </div>
+            
+
+                <div class="col-md-12">
+                   <h4 Style="color:black">Telefono:</h4><input type="text" placeholder="Ejemplo: 7381455126" id="telefono" name="telefono" onkeypress="return soloNumeros(event)" >
+                </div>
+                
+            </div>
+            
+                <div class="col-md-12">
+                    <h4 Style="color:black">Horario:</h4><input type="text" placeholder="Matutino/Vespertino" maxlength="" id="horario" name="horario" onkeypress="return soloLetras(event)">
+                </div>
+                
+                 <div class="col-md-12">
+                   <br/>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit"  value= "Guardar Datos"/>
+                </div>
+            </div>
+            
+    </div><td></tr></table>
+
+    </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+body {
+background-color: silver;
+color: white;
+padding: 20px;
+font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+background-color: #ffffff;
+background-color: black;
+color: white;
+padding: inherit;}
+
+p {
+padding:0px;
+margin: 0px;
+background-color: black}
+
+p.zero {
+background-color: black;
+color: white;
+}
+p.one {
+background-color: red;}
+p.two {
+background-color: rgb(255,41,41);}
+p.three {
+background-color: rgb(250,88,88);}
+p.four {
+background-color: rgb(245,140,178);}
+p.five {
+background-color: rgb(246,159,192);
+color:black;}
+p.six {
+background-color: rgb(36,36,36);}
+p.seven {
+background-color: rgb(61,61,61);}
+p.eight {
+background-color: rgb(140,202,242);}
+p.nine {
+background-color: rgb(114,193,240);}
+p.ten {
+background-color: rgb(84,182,237);}
+p.eleven {
+background-color: rgb(48,170,233);}
+p.twelve {
+background-color: rgb(0,160,230);}
+p.thirteen {
+background-color: rgb(0,149,226);}
+p.fourteen {
+background-color: rgb(0,136,221);}
+
+* {
+                margin:0px;
+                padding:0px;
+            }
+            
+            #header {
+                margin:auto;
+                width:500px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            
+            ul, ol {
+                list-style:none;
+            }
+            
+            .nav {
+                width:500px; /*Le establecemos un ancho*/
+                margin:0 auto; /*Centramos automaticamente*/
+            }
+ 
+            .nav > li {
+                float:left;
+            }
+            
+            .nav li a {
+                background-color:#000;
+                color:red;
+                text-decoration:none;
+                padding:10px 12px;
+                display:block;
+            }
+            
+            .nav li a:hover {
+                background-color:#434343;
+            }
+            
+            .nav li ul {
+                display:none;
+                position:absolute;
+                min-width:140px;
+            }
+            
+            .nav li:hover > ul {
+                display:block;
+            }
+            
+            .nav li ul li {
+                position:relative;
+            }
+            
+            .nav li ul li ul {
+                right:-140px;
+                top:0px;
+            }
+.w3-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
+.w3-border{border:1px solid #ccc!important}
+.w3-container{padding:0.01em 16px}

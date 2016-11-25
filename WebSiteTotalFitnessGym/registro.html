@@ -1,0 +1,98 @@
+<!doctype HTML>
+<html>
+
+<head>
+
+    <title>Registro</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="ValidarRegistro.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+
+        <link href="BarNavigation.css" rel="stylesheet" type="text/css">
+
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    -->
+
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body background="fondo1/fondo.jpg">
+    <div class="container">
+        <header class="row">
+            <div class="col-md-6">
+                <img src="images/7.jpg" class="img-rounded" alt="" width="225" helght="100">
+            </div>
+            <div class="col-md-6 text-right">
+                <p ><img src="images/2.jpg" class="img-rounded" alt="" width="500" helght="150"></p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <a href="index.html" id="lnk-index">INICIO</a>
+                    <a href="control.html" id="lnk-control">CONTROL</a>
+                    <a href="inscripcion.html" id="lnk-inscripcion">INSCRIPCION</a>
+                    <a href="ingresar.html" id="lnk-ingresar">INGRESAR</a>
+                    <a href="modificar.html" id="lnk-modificar">MODIFICAR</a>
+                    <a href="registro.html" id="lnk-registro">REGISTRO</a>
+                </div>
+
+     
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </header>
+        
+        <center>
+    <form action="ingresarInstructor.php" method="post">
+        <br/><table border=1 align="center" bgcolor="#B40404">
+      <tr align="center"><td><header class="row">
+
+                <div class="col-md-12">
+                   <br/><h4 Style="color:black">Hora de llegada:</h4><input type="text" placeholder="Ejemplo: 4:00" maxlength="" id="llegada" name="llegada">
+                </div>
+                
+            </div>
+             
+
+                <div class="col-md-12">
+                   <h4 Style="color:black">Tiempo aproximado de estancia:</h4><input type="text" placeholder="Ejemplo: 2 horas " id="aproximado" name="aproximado"  >
+                </div>
+                
+            </div>
+            
+                <div class="col-md-12">
+                   <h4 Style="color:black">Socios: </h4><input type="text" placeholder="Coloque su huella" id="ingresoSocio" name="ingresoSocio" onkeypress="return soloNumeros(event)" >
+                </div>
+                
+            </div>
+
+            <div class="col-md-12">
+                   <h4 Style="color:black">Visitas:</h4><input type="text" placeholder="Digite 1 por favor " id="ingresoVisitas" name="ingresoVisitas" onkeypress="return soloNumeros(event)" >
+                </div>
+                
+            </div>
+                
+                 <div class="col-md-12">
+                   <br/>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit"  value= "Guardar Datos"/>
+                </div>
+            </div>
+            
+    </div><td></tr></table>
+
+    </form>
+    </center>
+</body>
+
+</html>
